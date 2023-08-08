@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var n1 = prompt('Digite uma nota')
+        var n1 = Number(n1)
+        var n2 = prompt('Digite outra nota')
+        var n2 = Number(n2)
+        var media = (n1 + n2)/ 2
+
+        if (n1 == 0 || n2 == 0){  //Se a nota 1 ou a nota 2 for igua a 0 será reprovado!
+            alert("Reprovado por zerar uma das provas")
+        } else { //se nenhuma das notas forem 0 ele ira verificar a média das 2 se for maior que 5 sera aprovado caso contrario estara reprovado
+
+            if(media > 5) {
+                alert(`Parabéns, com a média ${media} você foi APROVADO!!`)
+            } else{
+                alert(`Com a média ${media} você foi REPROVADO!!`)
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Logica de Programação</h1>
+</body>
+</html>

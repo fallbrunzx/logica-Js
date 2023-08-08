@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    var jogador1 = Number(prompt('Esolha u, numero'))
+    var jogador2 = Number(prompt('Escolha outro numero:'))
+
+    if(jogador1 == jogador2){
+        alert('Deu empate e fé')
+    } else{
+        var nSorteado = parseInt(Math.random() * 2)
+
+        if (nSorteado == 0){
+
+            if(jogador1 < jogador2){
+                alert(`Ganhou o ${jogador1}`)
+            } else {
+                alert(`Ganhou o ${jogador2}`)
+            }
+
+        } else {
+
+            if(jogador1 > jogador2) {
+                alert(`Ganhou o ${jogador2}`)
+            } else {
+                alert(`Ganhou o ${jogador2}`)
+            }
+
+        }
+
+    }
+
+    </script>
+</head>
+<body>
+    <h1>Logica de Programação JavaScript</h1>
+</body>
+</html>
