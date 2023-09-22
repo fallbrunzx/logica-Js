@@ -9,23 +9,52 @@
     <h1>Logica de programação com javaScript</h1>
 
     <button onclick="somar()">+</button>
-    <button>-</button>
-    <button>*</button>
-    <button>/</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
 
-    <div id="res"></div>
+    <div id="output"></div>
 
     <script>
 
-        var n = Number(prompt('Escolha um numero'))
+        var n = prompt('Escolha um numero')
+        n = parseFloat(n);
         
-        var res = document.querySelector('#res').innerHTML = `${n}`
+        function escreve() {
+            var res = document.querySelector('#output')
+            res.innerHTML = `${n}`;
+        }
 
         function somar() {
-            var soma = Number(prompt('Escolha um numero para somar:'))
+            var n1 = prompt('Digite outro numero:')
+            n1 = parseFloat(n1)
 
-            var res = document.querySelector('#res').innerHTML = `${n + soma}`
+            n = n + n1
+            escreve()
+        }
 
+        function subtrair() {
+            var n1 = prompt('Digite outro numero:')
+            n1 = parseFloat(n1)
+
+            n = n - n1
+            escreve()
+        }
+
+        function multiplicar() {
+            var n1 = prompt('Digite outro numero:')
+            n1 = parseFloat(n1)
+
+            n = n * n1
+            escreve()
+        }
+
+        function dividir() {
+            var n1 = prompt('Digite outro numero:')
+            n1 = parseFloat(n1)
+
+            n = n / n1
+            escreve()
         }
 
 
